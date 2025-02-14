@@ -5,7 +5,76 @@
 @tailwind utilities;
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: "Comfortaa", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent any overflow */
+}
+
+
+
+@layer components{
+  .location-icon{
+    height: 16px;
+  }
+  
+  .header-text{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 37px;
+  }
+  
+  .nav-links{
+    font-size: 15px;
+  }
+  .nav-links a:hover, .active{
+    background: linear-gradient(to top, #C67250, #9B5B9A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .active::after{
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: -4px;
+    width: 53px;
+    border-radius: 7px;
+    height: 2px;
+    background: linear-gradient(to top, #C67250, #9B5B9A);
+  }
+  .shopper-button{
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .main-content{
+    background: linear-gradient(to right, #F2F7FB, #FFFF);
+    @apply relative min-h-screen w-screen overflow-x-hidden;
+  }
+  .login-modal{
+    @apply hidden md:block absolute left-[10%] bottom-[15%] bg-white md:w-[20rem] lg:w-[25rem] rounded-xl shadow-sm;
+
+  }
+  .login-modal h1{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .login-modal span, p{
+    color: #585858;
+    font-size: 16px;
+  }
+  .login-modal span{
+    font-weight: 300;
+  }
+  .login-modal p{
+    font-weight: 700;
+  }
+  .form-input{
+    @apply w-[85%] p-3 border-[1px] border-border_gray rounded-md
+  }
 }
