@@ -60,7 +60,7 @@ html, body {
   }
   .login-modal{
     box-shadow: 0 0 95px 10px rgba(66, 139, 193, 0.1) !important;
-    @apply hidden md:block absolute left-[8%] top-[38%] xl:top-[50%] 2xl:top-[55%] bg-white w-[25rem] rounded-xl shadow-sm z-50;
+    @apply hidden md:block absolute left-[8%] top-[38%] xl:top-[40%] 2xl:top-[55%] bg-white w-[25rem] rounded-xl shadow-sm z-50;
   }
   .login-modal h1, .welcome-back{
     font-size: 24px;
