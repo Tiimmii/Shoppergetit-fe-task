@@ -42,11 +42,11 @@ html, body {
   .active::after{
     content: '';
     position: absolute;
-    bottom: -24px;
+    bottom: -20px;
     left: -4px;
     width: 53px;
     border-radius: 7px;
-    height: 2px;
+    height: 1px;
     background: linear-gradient(to top, #C67250, #9B5B9A);
   }
   .shopper-button{

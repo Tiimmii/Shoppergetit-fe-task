@@ -6,22 +6,24 @@ import { FaShoppingCart } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
+    const [path, setPath] = useState<string|undefined>("")
     const [active, setActive] = useState<string|undefined>("")
     const [activeMobileMenu, setActiveMobileMenu] = useState(false)
     useEffect(()=>{
         const currentPath = window.location.pathname.split("/").filter(Boolean).pop();
+        setPath(currentPath)
         if (currentPath !== "undefined") {
-               setActive(currentPath)
+               setActive(path)
         }
         else{
             setActive("")
         }
-    })
+    }, [path])
     const handleItemClick = (item: any) => {
         setActive(item);
     };
     return (
-        <nav className='sticky top-0 z-50 w-full bg-header p-2 flex sm:justify-between md:justify-between h-[5rem] items-center'>
+        <nav className='sticky top-0 z-50 w-full bg-header p-2 flex sm:justify-between md:justify-between h-[4rem] items-center'>
             <div className='md:mx-5 desktop-navbar-item'>
                 <Image
                     src='/images/shoppergetit_logo.png'
