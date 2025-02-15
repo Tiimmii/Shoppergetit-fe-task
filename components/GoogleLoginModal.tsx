@@ -2,9 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import { IoMdSwap } from "react-icons/io";
 
-interface LoginModalProps {
-    setGoogleLoginModal: React.Dispatch<React.SetStateAction<boolean>>;
-}
 
 
 const GoogleLoginModal = ({ setGoogleLoginModal }: LoginModalProps) => {

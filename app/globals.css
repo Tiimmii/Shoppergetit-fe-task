@@ -12,7 +12,6 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevent any overflow */
 }
 
 
@@ -57,10 +56,10 @@ html, body {
     @apply relative min-h-screen w-screen overflow-x-hidden;
   }
   .login-modal{
-    @apply hidden md:block absolute left-[10%] bottom-[15%] bg-white md:w-[20rem] lg:w-[25rem] rounded-xl shadow-sm;
+    @apply hidden md:block absolute left-[10%] top-[30%] bg-white md:w-[20rem] lg:w-[25rem] rounded-xl shadow-sm;
 
   }
-  .login-modal h1{
+  .login-modal h1, .welcome-back{
     font-size: 24px;
     font-weight: 700;
   }
@@ -75,6 +74,6 @@ html, body {
     font-weight: 700;
   }
   .form-input{
-    @apply w-[85%] p-3 border-[1px] border-border_gray rounded-md
+    @apply p-3 border-[1px] border-border_gray rounded-md
   }
 }
