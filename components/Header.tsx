@@ -23,7 +23,7 @@ const Header = () => {
         setActive(item);
     };
     return (
-        <nav className='sticky top-0 z-50 w-full bg-header p-2 flex sm:justify-between md:justify-between h-[4rem] items-center'>
+        <nav className='sticky top-0 z-50 w-full bg-header p-2 flex sm:justify-between md:justify-between h-[5rem] items-center'>
             <div className='md:mx-5 desktop-navbar-item'>
                 <Image
                     src='/images/shoppergetit_logo.png'
