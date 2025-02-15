@@ -83,7 +83,7 @@ html, body {
     @apply relative !bottom-0 bg-footer !flex items-center justify-center w-full gap-4 flex-wrap h-[17rem];
   }
 }
-@media screen and (min-width: 1030px){
+@media screen and (min-width: 770px){
   .footer-bottom{
     display: none !important;
   }
