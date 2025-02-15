@@ -10,7 +10,7 @@ const MobileLoginModal = () => {
     return (
         <>
             {googleLoginModal ? (
-                <div>
+                <div className='mb-[10rem]'>
                     <div className='flex flex-col justify-center items-center'>
                         <button className='flex border-[1px] border-border_gray rounded-full p-4 w-[90%] justify-center items-center gap-4 my-3'>
                             <Image
@@ -28,7 +28,7 @@ const MobileLoginModal = () => {
                     </div>
                 </div>
             ) :
-                <div className='flex flex-col justify-center mx-6'>
+                <div className='flex flex-col justify-center mx-6 mb-[3rem]'>
                     <ManualLoginForm setGoogleLoginModal={setGoogleLoginModal} text='Tap' className=' rounded-md text-center'/>
                 </div>
             }

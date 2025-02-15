@@ -1,10 +1,11 @@
+import PageUnderConstruction from '@/components/PageUnderConstruction'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      sign up
-    </div>
+    <>
+        <PageUnderConstruction/>
+    </>
   )
 }
 

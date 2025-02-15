@@ -8,12 +8,16 @@ export default {
   ],
   theme: {
     extend: {
+      screens:{
+        md: "1030px"
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
         header: "#F9F9F9",
         button_primary: "#B63B56",
         border_gray: "#5D5D5D",
+        footer: "#F5F5F5",
       },
     },
   },

@@ -20,7 +20,7 @@ const GoogleLoginModal = ({ setGoogleLoginModal }: LoginModalProps) => {
                 />
                 <p>Login with Google</p>
             </button>
-            <div className='flex mt-4 mb-20 items-center gap-1 cursor-pointer' onClick={()=>setGoogleLoginModal(false)}>
+            <div className='flex mt-4 mb-[3rem] items-center gap-1 cursor-pointer' onClick={()=>setGoogleLoginModal(false)}>
                 <IoMdSwap />
                 <span>Click to switch to manual</span>
             </div>
