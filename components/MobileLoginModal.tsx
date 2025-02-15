@@ -13,7 +13,7 @@ const MobileLoginModal = () => {
                 <div className='mb-[10rem]'>
                     <div className='flex flex-col justify-center items-center'>
                         <button className='flex border-[1px] border-border_gray rounded-full p-4 w-[90%] justify-center items-center gap-4 my-3'>
-                            <Image
+                            <img
                                 src={"/images/google-logo.png"}
                                 alt='google logo'
                                 width={25}
